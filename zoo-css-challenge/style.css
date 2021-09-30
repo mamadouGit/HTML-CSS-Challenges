@@ -8,17 +8,25 @@ header {
   width: 100%;
   padding: 20px;
 }
-
+#logo{
+  border: none;
+}
 nav {
   display: inline-block;
   width: 100%;
 }
-
+.introduction{
+  background-color: white;
+  line-height: 1.5;
+}
 header ul {
   margin: 20px 0 0 0;
   padding: 0;
 }
-
+.bears-size{
+  height: 300px;
+  width: 300px;
+}
 header ul li {
   display: inline-block;
   margin-right: 10px;
@@ -65,7 +73,15 @@ button {
   border: 2px solid black;
   color: #fff;
 }
-
+#im1{
+  border-color: blue;
+}
+#im2{
+  border-color: red;
+}
+#im3{
+  background-color: yellow;
+}
 footer {
   background-color: #211a1d;
   color: #ffffff;
@@ -106,10 +122,15 @@ footer {
 .image-container img {
   vertical-align: top;
   border: 5px solid #747c92;
+  display: flex;
+  flex-direction: column;
+  position: ;
+  
+  
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .tigers {
@@ -118,14 +139,23 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
-}
+  background-color: #483C46;
+  color:#BEEE62 ;
 
+}
+.giraffe p:first-of-type{
+  font-size: 40px;
+}
 .giraffe h2 {
-  color: #ef6f6c;
+color:#F4743B ;
 }
-
+.news h2 {
+text-align: center;
+  
+}
+.container{
+  display: flex;
+}
 .card {
   display: inline-block;
   background-color: white;
@@ -160,12 +190,16 @@ footer {
   background-size: cover;
   background-position: center;
   padding: 100px 5%;
+  border-radius: 20px;
 }
 
 .education-container {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+}
+.education-container button{
+  font-size: larger;
 }
 
 .education-container h3,
@@ -176,8 +210,10 @@ footer {
 /*Membership*/
 
 .membership {
+width: 700px;
   text-align: center;
   background-color: #fffffc;
+  margin:10%;
 }
 
 .membership h2 {
@@ -187,9 +223,17 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
-
+a{
+  color: #6320ee;
+}
 /*Programs*/
 
-.programs .card {
-  display: block;
+.prog {
+  display: flex;
+}
+#badge{
+  top: 20px; ;
+  right: 20px; 
+  transition-duration: 4000ms;
+  transition-timing-function: ease-in-out;
 }

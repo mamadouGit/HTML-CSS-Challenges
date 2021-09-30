@@ -31,3 +31,23 @@
 body {
   font: 100% "Poppins", sans-serif;
 }
+MAIN{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.card{
+  margin: 20px;
+}
+.card-img-top{
+  width: 350px;
+}
+@media screen and (max-width:1000px) {
+  MAIN{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  
+}
